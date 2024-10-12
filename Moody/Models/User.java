@@ -1,16 +1,19 @@
+package Moody.Models;
 import java.util.ArrayList;
 import java.util.List;
 
 public class User {
     private String username;
+    private int userID;
     private String bio;
     private String gender;
     private int age;
     private String mood;
-    List<String> medicalHistory = new ArrayList();
+    List<String> medicalHistory = new ArrayList<>();
 
-    public User(String u, String b, String g, int a, String m) {
+    public User(String u, int id, String b, String g, int a, String m) {
         this.username = u;
+        this.userID = id;
         this.bio = b;
         this.gender = g;
         this.age = a;
@@ -23,6 +26,13 @@ public class User {
     }
     public String getUsername() {
         return this.username;
+    }
+
+    public void setUserID(int uID) {
+        this.userID = uID;
+    }
+    public int getUserID() {
+        return this.userID;
     }
 
     public void setBio(String b) {

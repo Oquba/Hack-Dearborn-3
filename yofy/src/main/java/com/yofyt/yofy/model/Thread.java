@@ -1,9 +1,16 @@
 package com.yofyt.yofy.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class Thread {
+    @Getter
     private int postNumber;
+    @Getter
     private int originalPosterID;
+    @Getter
     private String title;
+    @Getter
     private String body;
 
     public Thread(int pn, int opID, String t, String b) {
@@ -11,19 +18,6 @@ public class Thread {
         this.originalPosterID = opID;
         this.title = t;
         this.body = b;
-    }
-
-    public int getPostNumber() {
-        return this.postNumber;
-    }
-    public int getOriginialPosterID() {
-        return this.originalPosterID;
-    }
-    public String getTitle() {
-        return title;
-    }
-    public String getBody() {
-        return this.body;
     }
 }
 

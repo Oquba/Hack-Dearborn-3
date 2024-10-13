@@ -7,8 +7,14 @@ public class UserController {
     public String homePage() {
         return "home";
     }
+
     @GetMapping("/login")
     public String loginPage() {
         return "login";
+    }
+
+    @GetMapping("/register")
+    public String getRegisterForm() {
+        return "register";
     }
 }

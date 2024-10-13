@@ -8,6 +8,7 @@ import java.util.List;
 public class UserData {
     List<User> users = new ArrayList<>();
     private String dataPath = "UserData.txt";
+    int postCounter = 0;
 
     public void saveUsers() throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(dataPath, false))) {
@@ -59,5 +60,6 @@ public class UserData {
                 users.add(user);
             }
         }
+        postCounter = users.size();
     }
 }

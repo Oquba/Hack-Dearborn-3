@@ -1,4 +1,4 @@
-package Moody.Models;
+package com.yofyt.yofy.model;
 
 public class Thread {
     private int postNumber;
@@ -26,3 +26,4 @@ public class Thread {
         return this.body;
     }
 }
+

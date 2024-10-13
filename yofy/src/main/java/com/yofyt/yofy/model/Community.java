@@ -1,4 +1,4 @@
-package Moody.Models;
+package com.yofyt.yofy.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,5 +8,5 @@ public class Community {
 
     public void addNewpost(Thread post) {
         communityPosts.add(post);
-    } 
+    }
 }
